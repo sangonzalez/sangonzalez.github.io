@@ -21,20 +21,20 @@
 
     .columnprincipal {
       float: left;
-      width:1700px;
+      width:90%;
       padding: 1em;
       height: 100%; /* Should be removed. Only for demonstration */
-      margin-right: 150px;
-      margin-left: 80px;
+      margin-right: 5%;
+      margin-left: 5%;
       background-color:  rgb(211, 211, 211); 
 
     }
 
     .columnbanner {
       float: left;
-      width:1612px;
+      width:85%;
       padding: 1em;
-      height: 250px; /* Should be removed. Only for demonstration */
+      height: 18%; /* Should be removed. Only for demonstration */
       box-shadow: 2px 2px #b3b2b2;
       background-color:rgb(255, 255, 255);
       border-radius:12px;; 
@@ -42,8 +42,8 @@
     }
     .columnciudad {
       float: left;
-      width:1612px;
-      height: 40px; /* Should be removed. Only for demonstration */
+      width:85%;
+      height: 3%; /* Should be removed. Only for demonstration */
       box-shadow: 2px 2px #b3b2b2;
       background-color:rgb(177, 5, 5);
       border-radius:12px;
@@ -54,10 +54,10 @@
 
     .column {
       float: left;
-      width:calc(1600px / 3);
+      width:calc(84.2% / 3);
       padding: 1em;
-      height: 100px; /* Should be removed. Only for demonstration */
-      margin: 3px;
+      height: 4%; /* Should be removed. Only for demonstration */
+      margin: 2px;
       box-shadow: 2px 2px #b3b2b2;
       background-color:rgb(255, 255, 255);
       border-radius:12px;
@@ -66,10 +66,10 @@
     
     .column2 {
       float: left;
-      width:calc(1600px / 2);
+      width:calc(84% / 2);
       padding:1em;
-      height: 500px; /* Should be removed. Only for demonstration */
-      margin: 4.5px;
+      height: 400px; /* Should be removed. Only for demonstration */
+      margin: 3px;
       box-shadow: 2px 2px #b3b2b2;
       background-color:rgb(255, 255, 255);
       border-radius:12px;
@@ -101,10 +101,10 @@ select {
    border: whitesmoke;
    font-size: 16px;
    color:rgb(221, 218, 218);
-   height: 35px;
-   padding: 5px;
-   width: 250px;
-   margin-left: 700px;
+   height: 90%;
+   padding: 1%;
+   width: 20%;
+   margin-left: 40%;
    text-align-last:center;
 }
 select:focus{ outline: none;}
@@ -116,25 +116,25 @@ select:focus{ outline: none;}
     
   <div class="row">
   <div class="columnbanner">
-    <img src="templates/bannercovid.png" height= "230px" width="1500px"   alt="fig1">
+    <img src="templates/bannercovid.png" height= "95%" width="95%"   alt="fig1">
   </div>
   <div class="row">
    <div class="column">
     <p class="sansserif" style="text-align: center; color: rgb(83, 83, 83); font-size: 15px;">Total Confirmados:</p>
-    <p  class="sansserif" style="text-align: center; color: rgb(255, 255, 255); font-size: 20px;"><iframe style="background: #FFFFFF" src="templates/test1.txt" height="30" width="75" scrolling="no" frameBorder="0"></iframe></p>
+    <p  class="sansserif" style="text-align: center; color: rgb(255, 255, 255); font-size: 20px;"><iframe style="background: #FFFFFF" src="templates/test1.txt" height="30" width="80" scrolling="no" frameBorder="0"></iframe></p>
    </div>
    <div class="column" >
     <p class="sansserif" style="text-align: center; color: rgb(83, 83, 83); font-size: 15px;">Total Muertes:</p>
-    <p class="sansserif" style="text-align: center; color: rgb(255, 255, 255); font-size: 20px;"><iframe id='myFrame' src="templates/test.txt" height="40" width="80" scrolling="no" frameBorder="0"></iframe></p>
+    <p class="sansserif" style="text-align: center; color: rgb(255, 255, 255); font-size: 20px;"><iframe id='myFrame' src="templates/test.txt" height="30" width="80" scrolling="no" frameBorder="0"></iframe></p>
     </div>
    <div class="column" >
     <p class="sansserif" style="text-align: center; color: rgb(83, 83, 83); font-size: 15px;">Total Recuperados:</p>
-    <p class="sansserif" style="text-align: center; color: rgb(255, 255, 255); font-size: 20px;"><iframe src="templates/test.txt" height="40" width="80" scrolling="no" frameBorder="0"></iframe></p>
+    <p class="sansserif" style="text-align: center; color: rgb(255, 255, 255); font-size: 20px;"><iframe src="templates/test.txt" height="30" width="80" scrolling="no" frameBorder="0"></iframe></p>
     </div>
  </div>
  <div class="row">
  <div class="columnciudad">
-   <select class="select" dir="ltr" id="ciudad" name="Ciudad"  onchange="selectPlot()" height= "30px" width="1000px">
+   <select class="select" dir="ltr" id="ciudad" name="Ciudad"  onchange="selectPlot()" height= "95%" width="20%">
      <option value="Bogotá">Bogotá</option>
      <option value="Medellín">Medellín</option>
      <option value="Cali">Cali</option>
@@ -145,15 +145,15 @@ select:focus{ outline: none;}
 
  <div class="row">
   <div class="column2">
-        <div class="myImage" id="Bogotá"   style="display:none"> <object data="templates/temp-plot2.html" height= "450px" width="750px"></object>   </div>
-        <div class="myImage" id="Medellín"   style="display:none">  <object data="templates/temp-plot.html" height= "450px" width="750px"></object>   </div>   
+        <div class="myImage" id="Bogotá"   style="display:block"> <object data="templates/temp-plot2.html" height= "380px" width="95%"></object>   </div>
+        <div class="myImage" id="Medellín"   style="display:none">  <object data="templates/temp-plot.html" height= "380px" width="95%"></object>   </div>   
         <div class="myImage" id="Cali"   style="display:none">  <img src="figs/S.Amer.png"   alt="S.Amer">   </div>
         <div class="myImage" id="Barranquilla"  style="display:none">  <img src="figs/Oceania.png"  alt="Oceania">  </div>
         <div class="myImage" id="Cartagena"   style="display:none">  <img src="figs/Africa.png"   alt="Africa">   </div>
         </div>
   <div class="column2">
-    <div class="myImage" id="Bogotá"   style="display:none"> <object data="templates/temp-plot_t2.html" height= "450px" width="750px"></object>   </div>
-        <div class="myImage" id="Medellín"   style="display:none">  <object data="templates/tabla.html" height= "500px" width="800px"></object>   </div>   
+    <div class="myImage" id="Bogotá"   style="display:block"> <object data="templates/temp-plot_t2.html" height= "380pxpx" width="95%"></object>   </div>
+        <div class="myImage" id="Medellín"   style="display:none">  <object data="templates/tabla.html" height= "380px" width="95%x"></object>   </div>   
         <div class="myImage" id="Cali"   style="display:none">  <img src="figs/S.Amer.png"   alt="S.Amer">   </div>
         <div class="myImage" id="Barranquilla"  style="display:none">  <img src="figs/Oceania.png"  alt="Oceania">  </div>
         <div class="myImage" id="Cartagena"   style="display:none">  <img src="figs/Africa.png"   alt="Africa">   </div>
