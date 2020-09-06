@@ -77,8 +77,18 @@
       float: left;
       width:calc(99% / 2);
       padding:1em;
-      height: 400px; /* Should be removed. Only for demonstration */
+      height: 480px; /* Should be removed. Only for demonstration */
       margin: 2.5px;
+      box-shadow: 2px 2px #b3b2b2;
+      background-color:rgb(255, 255, 255);
+      border-radius:12px;
+    }
+
+    .column3 {
+      float: left;
+      width:100%;
+      padding:1em;
+      height: 580px; /* Should be removed. Only for demonstration */
       box-shadow: 2px 2px #b3b2b2;
       background-color:rgb(255, 255, 255);
       border-radius:12px;
@@ -132,15 +142,28 @@ select:focus{ outline: none;}
   </div>
   <div class="row">
    <div class="column">
-    <p class="sansserif" style="text-align: center; color: rgb(83, 83, 83); font-size: 15px;">Total Confirmados:</p><p  class="sansserif" style="text-align: center; color: rgb(255, 255, 255); font-size: 20px;"><iframe style="background: #FFFFFF" src="templates/test1.txt" height="30" width="80" scrolling="no" frameBorder="0"></iframe></p>
+    <p class="sansserif" style="text-align: center; color: rgb(83, 83, 83); font-size: 15px;">Total Confirmados:</p>
+        <div class="myImage" id="Bogotá"   style="display:block ; text-align: center"> <iframe id='myFrame' src="Templates\bog_confirmados.txt" height="30" width="80" scrolling="no" frameBorder="0"></iframe>   </div>
+        <div class="myImage" id="Medellín"   style="display:none ; text-align: center">  <iframe id='myFrame' src="Templates\med_confirmados.txt" height="30" width="80" scrolling="no" frameBorder="0"></iframe>   </div>   
+        <div class="myImage" id="Cali"   style="display:none ; text-align: center">  <iframe id='myFrame' src="Templates\cali_confirmados.txt" height="30" width="80" scrolling="no" frameBorder="0"></iframe>   </div>
+        <div class="myImage" id="Barranquilla"  style="display:none ;text-align: center">  <iframe id='myFrame' src="Templates\barranquilla_confirmados.txt" height="30" width="80" scrolling="no" frameBorder="0"></iframe>   </div>
+        <div class="myImage" id="Cartagena"   style="display:none ; text-align: center">  <iframe id='myFrame' src="Templates\cartagena_confirmados.txt" height="30" width="80" scrolling="no" frameBorder="0"></iframe>   </div>
    </div>
    <div class="column" >
-    <p class="sansserif" style="text-align: center; color: rgb(83, 83, 83); font-size: 15px;">Total Muertes:</p>
-    <p class="sansserif" style="text-align: center; color: rgb(255, 255, 255); font-size: 20px;"><iframe id='myFrame' src="templates/test.txt" height="30" width="80" scrolling="no" frameBorder="0"></iframe></p>
+    <p class="sansserif" style="text-align: center; color: rgb(83, 83, 83); font-size: 15px;">Total Recuperados:</p>
+        <div class="myImage" id="Bogotá"   style="display:block ; text-align: center"> <iframe id='myFrame' src="Templates\bog_recuperados.txt" height="30" width="80" scrolling="no" frameBorder="0"></iframe>   </div>
+        <div class="myImage" id="Medellín"   style="display:none ; text-align: center">  <iframe id='myFrame' src="Templates\med_recuperados.txt" height="30" width="80" scrolling="no" frameBorder="0"></iframe>   </div>   
+        <div class="myImage" id="Cali"   style="display:none ; text-align: center">  <iframe id='myFrame' src="Templates\bog_recuperados.txt" height="30" width="80" scrolling="no" frameBorder="0"></iframe>   </div>
+        <div class="myImage" id="Barranquilla"  style="display:none ;text-align: center">  <iframe id='myFrame' src="Templates\barranquilla_recuperados.txt" height="30" width="80" scrolling="no" frameBorder="0"></iframe>   </div>
+        <div class="myImage" id="Cartagena"   style="display:none ; text-align: center">  <iframe id='myFrame' src="Templates\cartagena_recuperados.txt" height="30" width="80" scrolling="no" frameBorder="0"></iframe>   </div>
     </div>
    <div class="column" >
-    <p class="sansserif" style="text-align: center; color: rgb(83, 83, 83); font-size: 15px;">Total Recuperados:</p>
-    <p class="sansserif" style="text-align: center; color: rgb(255, 255, 255); font-size: 20px;"><iframe src="templates/test.txt" height="30" width="80" scrolling="no" frameBorder="0"></iframe></p>
+    <p class="sansserif" style="text-align: center; color: rgb(83, 83, 83); font-size: 15px;">Total Muertos:</p>
+        <div class="myImage" id="Bogotá"   style="display:block ; text-align: center"> <iframe id='myFrame' src="Templates\bog_fallecidos.txt" height="30" width="80" scrolling="no" frameBorder="0"></iframe>   </div>
+        <div class="myImage" id="Medellín"   style="display:none ; text-align: center">  <iframe id='myFrame' src="Templates\med_fallecidos.txt" height="30" width="80" scrolling="no" frameBorder="0"></iframe>   </div>   
+        <div class="myImage" id="Cali"   style="display:none ; text-align: center">  <iframe id='myFrame' src="Templates\cali_fallecidos.txt" height="30" width="80" scrolling="no" frameBorder="0"></iframe>   </div>
+        <div class="myImage" id="Barranquilla"  style="display:none ;text-align: center">  <iframe id='myFrame' src="Templates\barranquilla_fallecidos.txt" height="30" width="80" scrolling="no" frameBorder="0"></iframe>   </div>
+        <div class="myImage" id="Cartagena"   style="display:none ; text-align: center">  <iframe id='myFrame' src="Templates\cartagena_fallecidos.txt" height="30" width="80" scrolling="no" frameBorder="0"></iframe>   </div>
     </div>
  </div>
  <div class="row">
@@ -155,27 +178,55 @@ select:focus{ outline: none;}
  </div>
 
  <div class="row">
-  <div class="column2">
-        <div class="myImage" id="Bogotá"   style="display:block"> <object data="templates/temp-plot2.html" height= "380px" width="95%"></object>   </div>
-        <div class="myImage" id="Medellín"   style="display:none">  <object data="templates/temp-plot.html" height= "380px" width="95%"></object>   </div>   
-        <div class="myImage" id="Cali"   style="display:none">  <img src="figs/S.Amer.png"   alt="S.Amer">   </div>
-        <div class="myImage" id="Barranquilla"  style="display:none">  <img src="figs/Oceania.png"  alt="Oceania">  </div>
-        <div class="myImage" id="Cartagena"   style="display:none">  <img src="figs/Africa.png"   alt="Africa">   </div>
+  <div class="column3">
+        <p class="sansserif" style="text-align: center; color: rgb(83, 83, 83); font-size: 15px;">Pronóstico Mediano Plazo - Modelo SIR :</p>
+        <div class="myImage" id="Bogotá"   style="display:block"> <object data="Templates/bog_forecast_SIR.html" height= "500px" width="95%"></object>   </div>
+        <div class="myImage" id="Medellín"   style="display:none">  <object data="Templates\med_forecast_SIR.html" height= "500px" width="95%"></object>   </div>   
+        <div class="myImage" id="Cali"   style="display:none">  <object data="Templates\cali_forecast_SIR.html" height= "500px" width="95%"></object>   </div>
+        <div class="myImage" id="Barranquilla"  style="display:none">  <object data="Templates\barranquilla_forecast_SIR.html" height= "500px" width="95%"></object>   </div>
+        <div class="myImage" id="Cartagena"   style="display:none">  <object data="Templates\cartagena_forecast_SIR.html" height= "500px" width="95%"></object>   </div>
         </div>
   <div class="column2">
-    <div class="myImage" id="Bogotá"   style="display:block"> <object data="templates/temp-plot_t2.html" height= "380pxpx" width="95%"></object>   </div>
-        <div class="myImage" id="Medellín"   style="display:none">  <object data="templates/tabla.html" height= "380px" width="95%x"></object>   </div>   
-        <div class="myImage" id="Cali"   style="display:none">  <img src="figs/S.Amer.png"   alt="S.Amer">   </div>
-        <div class="myImage" id="Barranquilla"  style="display:none">  <img src="figs/Oceania.png"  alt="Oceania">  </div>
-        <div class="myImage" id="Cartagena"   style="display:none">  <img src="figs/Africa.png"   alt="Africa">   </div>
+        <p class="sansserif" style="text-align: center; color: rgb(83, 83, 83); font-size: 13px;">Pronóstico Corto Plazo - Modelo Arima- Casos Nuevos :</p>
+        <div class="myImage" id="Bogotá"   style="display:block"> <object data="Templates\bog_forecast_corto_nuev_casos.html" height= "430px" width="95%"></object>   </div>
+        <div class="myImage" id="Medellín"   style="display:none">  <object data="Templates\med_forecast_corto_nuev_casos.html" height= "430px" width="95%"></object>   </div>   
+        <div class="myImage" id="Cali"   style="display:none">  <object data="Templates\cali_forecast_corto_nuev_casos.html" height= "430px" width="95%"></object>   </div>
+        <div class="myImage" id="Barranquilla"  style="display:none">  <object data="Templates\barranquilla_forecast_corto_nuev_casos.html" height= "430px" width="95%"></object>   </div>
+        <div class="myImage" id="Cartagena"   style="display:none">  <object data="Templates\cartagena_forecast_corto_nuev_casos.html" height= "430px" width="95%"></object>   </div>
         </div>
   <div class="row">
 <div class="column2">
+  <p class="sansserif" style="text-align: center; color: rgb(83, 83, 83); font-size: 13px;">Pronóstico Corto Plazo - Modelo Arima- Confirmados :</p>
+        <div class="myImage" id="Bogotá"   style="display:block"> <object data="Templates\bog_forecast_corto_Confirmados.html" height= "430px" width="95%"></object>   </div>
+        <div class="myImage" id="Medellín"   style="display:none">  <object data="Templates\med_forecast_corto_Confirmados.html" height= "430px" width="95%"></object>   </div>   
+        <div class="myImage" id="Cali"   style="display:none">  <object data="Templates\cali_forecast_corto_Confirmados.html" height= "430px" width="95%"></object>   </div>
+        <div class="myImage" id="Barranquilla"  style="display:none">  <object data="Templates\barranquilla_forecast_corto_Confirmados.html" height= "430px" width="95%"></object>   </div>
+        <div class="myImage" id="Cartagena"   style="display:none">  <object data="Templates\cartagena_forecast_corto_Confirmados.html" height= "430px" width="95%"></object>   </div>
 </div>
 <div class="column2">
+  <p class="sansserif" style="text-align: center; color: rgb(83, 83, 83); font-size: 13px;">Pronóstico Corto Plazo - Modelo Arima- Activos :</p>
+        <div class="myImage" id="Bogotá"   style="display:block"> <object data="Templates\bog_forecast_corto_activos.html" height= "430px" width="95%"></object>   </div>
+        <div class="myImage" id="Medellín"   style="display:none">  <object data="Templates\med_forecast_corto_activos.html" height= "430px" width="95%"></object>   </div>   
+        <div class="myImage" id="Cali"   style="display:none">  <object data="Templates\cali_forecast_corto_activos.html" height= "430px" width="95%"></object>   </div>
+        <div class="myImage" id="Barranquilla"  style="display:none">  <object data="Templates\barranquilla_forecast_corto_activos.html" height= "430px" width="95%"></object>   </div>
+        <div class="myImage" id="Cartagena"   style="display:none">  <object data="Templates\cartagena_forecast_corto_activos.html" height= "430px" width="95%"></object>   </div>
 </div>
-
-
+<div class="column2">
+  <p class="sansserif" style="text-align: center; color: rgb(83, 83, 83); font-size: 13px;">Pronóstico Corto Plazo - Modelo Arima- Recuperados :</p>
+        <div class="myImage" id="Bogotá"   style="display:block"> <object data="Templates\bog_forecast_corto_recuperados.html" height= "430px" width="95%"></object>   </div>
+        <div class="myImage" id="Medellín"   style="display:none">  <object data="Templates\med_forecast_corto_recuperados.html" height= "430px" width="95%"></object>   </div>   
+        <div class="myImage" id="Cali"   style="display:none">  <object data="Templates\cali_forecast_corto_recuperados.html" height= "430px" width="95%"></object>   </div>
+        <div class="myImage" id="Barranquilla"  style="display:none">  <object data="Templates\barranquilla_forecast_corto_recuperados.html" height= "430px" width="95%"></object>   </div>
+        <div class="myImage" id="Cartagena"   style="display:none">  <object data="Templates\cartagena_forecast_corto_recuperados.html" height= "430px" width="95%"></object>   </div>
+</div>
+<div class="column3">
+  <p class="sansserif" style="text-align: center; color: rgb(83, 83, 83); font-size: 15px;">Pronóstico Corto Plazo - Modelo Arima- Muertos :</p>
+        <div class="myImage" id="Bogotá"   style="display:block"> <object data="Templates\bog_forecast_corto_fallecidos.html" height= "500px" width="95%"></object>   </div>
+        <div class="myImage" id="Medellín"   style="display:none">  <object data="Templates\med_forecast_corto_fallecidos.html" height= "500px" width="95%"></object>   </div>   
+        <div class="myImage" id="Cali"   style="display:none">  <object data="Templates\cali_forecast_corto_fallecidos.html" height= "500px" width="95%"></object>   </div>
+        <div class="myImage" id="Barranquilla"  style="display:none">  <object data="Templates\barranquilla_forecast_corto_fallecidos.html" height= "500px" width="95%"></object>   </div>
+        <div class="myImage" id="Cartagena"   style="display:none">  <object data="Templates\med_forecast_corto_fallecidos.html" height= "500px" width="95%"></object>   </div>
+</div>
  </div>
   </div>
 </div>
