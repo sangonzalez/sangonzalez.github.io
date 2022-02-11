@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    box-sizing: border-box;   
+   }
+  
+  .columngeneral {
+    width:100%;
+    height: 100%; /* Should be removed. Only for demonstration */
+    background-color:  #ffffff; 
+    margin:0px
+  
+  }
+  
+  .titulos{
+      
+    width:639px;
+    height: 10px; /* Should be removed. Only for demonstration */
+    display: flex;
+    justify-content:left;
+    color:rgb(98, 98, 98);
+    background-color:#ffffff;
+    font-family:   'Calibri' ;
+    font-size: 32;
+    margin: auto auto ;
+    justify-content:left;
+    line-height:2;
+    font-weight: bold;
+  }
+  
+  .titulos2{
+      
+    width:1280px;
+    height: 10px; /* Should be removed. Only for demonstration */
+    display: flex;
+    justify-content:left;
+    color:rgb(98, 98, 98);
+    background-color:#ffffff;
+    font-family:   'Calibri' ;
+    font-size: 32;
+    margin: auto auto ;
+    justify-content:left;
+    line-height:2;
+    font-weight: bold;
+  }
+  .titulos3{
+      
+    width:639px;
+    height: 10px; /* Should be removed. Only for demonstration */
+    display: flex;
+    justify-content:left;
+    color:rgb(98, 98, 98);
+    background-color:#ffffff;
+    font-family:   'Calibri' ;
+    font-size: 32;
+    margin: auto auto ;
+    justify-content:left;
+    line-height:2;
+    font-weight: bold;
+  }
+  
+  .macro1{
+      
+        width:1280px;
+        height: 520px; /* Should be removed. Only for demonstration */
+        box-shadow: 0px 1.2px #b3b2b2;
+        background-color:rgb(255, 255, 255);
+        border-radius:5px;
+        display: flex;
+        justify-content:center;
+        max-width:1280px;
+        margin: auto auto ;
+        padding-top: 10px;
+  }
+
+  .macro0{
+      
+    width:1280px;
+    height: 10px; /* Should be removed. Only for demonstration */
+    display: flex;
+    justify-content:left;
+    color:rgb(98, 98, 98);
+    background-color:#ffffff;
+    padding-top: 80px;
+    padding-left: 12px;
+    padding-bottom: 50px;
+    font-family:   'Calibri' ;
+    font-size: 32;
+    margin: auto auto ;
+    justify-content:left;
+    line-height:2;
+    font-weight: bold;
+}
+  
+  .micro1{
+      width:170px;
+      height: 520px; 
+      background-color:rgb(255, 255, 255);
+      border:1px;
+      border-color: black;
+      display:inline-block;
+      
+  
+  
+  }
+
+  .micro2{
+    width:170px;
+    height: 520px; 
+    background-color:rgb(255, 255, 255);
+    border:1px;
+    border-color: black;
+    display:inline-block;
+    
+
+
+}
+
+  .micro3{
+    width:940px;
+    height: 520px; 
+    background-color:rgb(124, 123, 123);
+    border:1px;
+    border-color: black;
+    justify-content:right;
+    }
+  
+  .macro2{
+      
+      width:1280px;
+      height: 380px; /* Should be removed. Only for demonstration */
+      box-shadow: 0px 1.2px #b3b2b2;
+      background-color:rgb(255, 255, 255);
+      border-radius:2px;
+      border:1px;
+      border-color: black;
+      display: flex;
+      justify-content:center;
+      max-width:1280px;
+      margin: auto auto ;
+      padding-top: 10px;
+  }
+  
+  .micro2_1{
+    width:800px;
+    height: 360px; 
+    background-color:rgb(255, 255, 255);
+    border:1px;
+    border-color: black;
+    justify-content:block;
+    
+  
+  
+  }
+  .micro2_2{
+    width:479px;
+    height: 360px; 
+    background-color:rgb(255, 255, 255);
+    border:1px;
+    border-color: black;
+    justify-content:right;
+    
+  
+  }
+  
+  .metavalor1{
+  
+    width:180px;
+    height: 70px;      
+    color:rgb(58, 58, 58);
+    background-color:#cad2c5;
+    margin:3px 3px;
+    align-content: top;
+    padding:0px 10px;
+    justify-content:top;
+    
+   
+  
+  }
+  
+  .metavalor2_1{
+  
+    width:180px;
+    height: 70px;     
+    color:white;
+    background-color:#84a98c;
+    margin:3px 3px;
+    align-content: top;
+    padding:0px 10px;
+    justify-content:top;
+    
+  }
+
+  .metavalor2_2{
+  
+    width:180px;
+    height: 70px;        
+    color:white;
+    background-color:#84a98c;
+    margin:3px 3px;
+    align-content: left;
+    padding:0px 10px;
+    
+  
+  }
+
+  .metavalor2_3{
+  
+    width:180px;
+    height: 70px;         
+    color:white;
+    background-color:#84a98c;
+    margin:3px 3px;
+    align-content: left;
+    padding:0px 10px;
+    
+  
+  }
+  
+  .metavalor3{
+  
+    width:180px;
+    height: 70px;     
+    color:white;
+    background-color:#52796f;
+    margin:3px 3px;
+    align-content: left;
+    padding:0px 10px;
+    
+  
+  }
+  .metavalor4{
+  
+    width:180px;
+    height: 70px;       
+    color:white;
+    background-color:#354f52;
+    margin:3px 3px;
+    align-content: left;
+    padding:0px 10px;
+    
+  
+  }
+
+  .metavalor5{
+  
+    width:180px;
+    height: 70px;      
+    color:white;
+    background-color:#354f52;
+    margin:3px 3px;
+    align-content: left;
+    padding:0px 10px;
+    
+  
+  }
+  
+  .metavalor2{
+      width:592px;
+      height: 40px; 
+      color:rgb(156, 154, 154);
+      background-color:rgb(243, 243, 243);
+      margin:3px 3px;
+      display: flex; 
+      position:relative;
+      line-height:3;
+      overflow:hidden;
+      border-radius: .25em;
+  
+      
+  }
+  .metagrafico1{
+    width:505px;
+    height: 302px; 
+    color:white;
+    background-color:rgb(255, 255, 255);
+    margin:3px 3px;
+    display: flex; 
+  }
+  
+  .metagrafico2{
+    width:592px;
+    height: 302px; 
+    color:white;
+    background-color:rgb(255, 255, 255);
+    margin:3px 3px;
+    display: flex; 
+  }
+  
+  select {
+    appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -webkit-appearance: none;
+    outline:0;
+    box-shadow: none;
+    border:0;
+    background: rgb(243, 243, 243);
+    background-image: none;
+    flex:1;
+    padding:0 .5em;
+    cursor:pointer;
+    font-size: 16;
+    font-family:Calibri;
+  }
+  
+  select::-ms-expand {
+  display:none
+  }
+  
+  .metavalor2::after{
+      
+      content:'\25BC';
+      position:absolute;
+      top:0;
+      right:0;
+      padding: 0 1em;
+      background:rgb(243, 243, 243);
+      cursor:pointer;
+      pointer-events:none;
+      transition:.25s all ease;
+  
+  
+  }
+  
+  .metavalor2:hover:after{
+      
+      color:#2e4144;
+      
+  
+  }

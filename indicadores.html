@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Navbar</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style_indicadores.css">
 </head>
 <body>
   
@@ -28,8 +29,74 @@
    <p class="g_riesgos">  Gestión de Riesgos  | COOFINEP</p>
  </nav>
 </header>
-<div class="div_inicial"> 
-  <img ><img src="Templates/en-construccion verde.jpg" height= 300px width=400px   alt="fig2"></img>
-
+<div class="columngeneral" >
+<div class="macro0" >
+  <div class="titulos" >Indicadores de Riesgo y Mora</div>
+  <div class="titulos3" >Saldos de Cartera</div>
 </div>
+  <div class="macro1"> 
+    <div class="micro1">
+      <div class="metavalor1" >IRC :
+        <div class="myImage" > <iframe src="Templates/IRC.html" height="68" width="178" scrolling="no" frameBorder="0"></iframe>   </div>
+      </div>
+       <div class="metavalor2_1">IRC Consumo:
+        <div class="myImage" > <iframe src="Templates/irc_consumo.html" height="68" width="178" scrolling="no" frameBorder="0"></iframe>   </div>
+       </div>
+       <div class="metavalor2_2">IRC Consumo-Caja:
+        <div class="myImage" > <iframe src="Templates/irc_consumo_caja.html" height="68" width="178" scrolling="no" frameBorder="0"></iframe>   </div>
+       </div>
+       <div class="metavalor2_3">IRC Consumo-Nómina:
+        <div class="myImage" > <iframe src="Templates/irc_consumo_nomina.html" height="68" width="178" scrolling="no" frameBorder="0"></iframe>   </div>
+       </div>
+      <div class="metavalor3">IRC Comercial:
+        <div class="myImage" > <iframe src="Templates/irc_comercial.html" height="68" width="178" scrolling="no" frameBorder="0"></iframe>   </div>
+      </div>
+      <div class="metavalor4">IRC Vivienda:
+        <div class="myImage" > <iframe src="Templates/irc_vivienda.html" height="68" width="178" scrolling="no" frameBorder="0"></iframe>   </div>
+      </div>
+      <div class="metavalor5">IRC Microcrédito:
+        <div class="myImage" > <iframe src="Templates/irc_microcredito.html" height="68" width="178" scrolling="no" frameBorder="0"></iframe>   </div>
+      </div>
+    </div>
+    <div class="micro2">
+      <div class="metavalor1" >IMO :
+        <div class="myImage" > <iframe src="Templates/IMO.html" height="68" width="178" scrolling="no" frameBorder="0"></iframe>   </div>
+      </div>
+       <div class="metavalor2_1">IMO Consumo:
+        <div class="myImage" > <iframe src="Templates/imo_consumo.html" height="68" width="178" scrolling="no" frameBorder="0"></iframe>   </div>
+       </div>
+       <div class="metavalor2_2">IMO Consumo-Caja:
+        <div class="myImage" > <iframe src="Templates/imo_consumo_caja.html" height="68" width="178" scrolling="no" frameBorder="0"></iframe>   </div>
+       </div>
+       <div class="metavalor2_3">IMO Consumo-Nómina:
+        <div class="myImage" > <iframe src="Templates/imo_consumo_nomina.html" height="68" width="178" scrolling="no" frameBorder="0"></iframe>   </div>
+       </div>
+      <div class="metavalor3">IMO Comercial:
+        <div class="myImage" > <iframe src="Templates/imo_comercial.html" height="68" width="178" scrolling="no" frameBorder="0"></iframe>   </div>
+      </div>
+      <div class="metavalor4">IMO Vivienda:
+        <div class="myImage" > <iframe src="Templates/imo_vivienda.html" height="68" width="178" scrolling="no" frameBorder="0"></iframe>   </div>
+      </div>
+      <div class="metavalor5">IMO Microcrédito:
+        <div class="myImage" > <iframe src="Templates/imo_microcredito.html" height="68" width="178" scrolling="no" frameBorder="0"></iframe>   </div>
+      </div>
+    </div>
+    <div class="micro3"></div>
+    
+  </div>
+</div>
+  <script>
+    function selectPlot() {
+      var fig = document.getElementById("fig").value;
+      var images = document.getElementsByClassName("metagrafico1");
+      for (var i = 0; i < images.length; i++) {
+        if (images[i].id == fig) {
+          images[i].style.display = "block"
+        }else{
+          images[i].style.display = "none"
+        }
+      }
+    }
+  </script>
+  
 </html>
